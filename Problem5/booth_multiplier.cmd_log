@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem5/booth_multiplier.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem5/booth_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 booth_multiplier.ngc booth_multiplier.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o booth_multiplier_map.ncd booth_multiplier.ngd booth_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off booth_multiplier_map.ncd booth_multiplier.ncd booth_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml booth_multiplier.twx booth_multiplier.ncd -o booth_multiplier.twr booth_multiplier.pcf 
+bitgen -intstyle ise -f booth_multiplier.ut booth_multiplier.ncd 
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem5/booth_multiplier.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem5/booth_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 booth_multiplier.ngc booth_multiplier.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o booth_multiplier_map.ncd booth_multiplier.ngd booth_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off booth_multiplier_map.ncd booth_multiplier.ncd booth_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml booth_multiplier.twx booth_multiplier.ncd -o booth_multiplier.twr booth_multiplier.pcf 
+bitgen -intstyle ise -f booth_multiplier.ut booth_multiplier.ncd 
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem5/booth_multiplier.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem5/booth_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 booth_multiplier.ngc booth_multiplier.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o booth_multiplier_map.ncd booth_multiplier.ngd booth_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off booth_multiplier_map.ncd booth_multiplier.ncd booth_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml booth_multiplier.twx booth_multiplier.ncd -o booth_multiplier.twr booth_multiplier.pcf 
+bitgen -intstyle ise -f booth_multiplier.ut booth_multiplier.ncd 

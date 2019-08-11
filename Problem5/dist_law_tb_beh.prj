@@ -1,0 +1,4 @@
+verilog work "booth_multiplier.v"
+verilog work "dist_law.v"
+verilog work "dist_law_tb.v"
+verilog work "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

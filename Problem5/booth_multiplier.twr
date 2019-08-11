@@ -1,0 +1,104 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce
+-intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml booth_multiplier.twx
+booth_multiplier.ncd -o booth_multiplier.twr booth_multiplier.pcf
+
+Design file:              booth_multiplier.ncd
+Physical constraint file: booth_multiplier.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+M<0>           |A<0>           |    7.634|
+M<0>           |A<1>           |    7.290|
+M<0>           |A<2>           |    7.067|
+M<0>           |A<3>           |    8.781|
+M<0>           |A<4>           |   10.063|
+M<0>           |A<5>           |    7.893|
+M<0>           |A<6>           |    7.847|
+M<0>           |A<7>           |    7.573|
+M<1>           |A<1>           |    7.520|
+M<1>           |A<2>           |    6.862|
+M<1>           |A<3>           |    9.011|
+M<1>           |A<4>           |   10.011|
+M<1>           |A<5>           |    7.988|
+M<1>           |A<6>           |    7.601|
+M<1>           |A<7>           |    7.327|
+M<2>           |A<2>           |    7.040|
+M<2>           |A<3>           |    8.046|
+M<2>           |A<4>           |   10.049|
+M<2>           |A<5>           |    8.115|
+M<2>           |A<6>           |    7.909|
+M<2>           |A<7>           |    7.635|
+M<3>           |A<3>           |    7.943|
+M<3>           |A<4>           |    9.960|
+M<3>           |A<5>           |    7.730|
+M<3>           |A<6>           |    7.718|
+M<3>           |A<7>           |    7.444|
+Q<0>           |A<0>           |    7.706|
+Q<0>           |A<1>           |    7.329|
+Q<0>           |A<2>           |    6.745|
+Q<0>           |A<3>           |    7.685|
+Q<0>           |A<4>           |    8.647|
+Q<0>           |A<5>           |    7.877|
+Q<0>           |A<6>           |    6.840|
+Q<0>           |A<7>           |    6.566|
+Q<1>           |A<1>           |    7.259|
+Q<1>           |A<2>           |    6.818|
+Q<1>           |A<3>           |    7.627|
+Q<1>           |A<4>           |    8.094|
+Q<1>           |A<5>           |    7.547|
+Q<1>           |A<6>           |    6.946|
+Q<1>           |A<7>           |    6.672|
+Q<2>           |A<2>           |    6.913|
+Q<2>           |A<3>           |    6.653|
+Q<2>           |A<4>           |    6.763|
+Q<2>           |A<5>           |    7.229|
+Q<2>           |A<6>           |    6.440|
+Q<2>           |A<7>           |    6.166|
+Q<3>           |A<3>           |    7.200|
+Q<3>           |A<4>           |    8.022|
+Q<3>           |A<5>           |    6.719|
+Q<3>           |A<6>           |    6.701|
+Q<3>           |A<7>           |    6.427|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 23 14:00:11 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 376 MB
+
+
+

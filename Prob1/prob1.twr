@@ -1,0 +1,161 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce
+-intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml prob1.twx prob1.ncd -o prob1.twr
+prob1.pcf
+
+Design file:              prob1.ncd
+Physical constraint file: prob1.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+count_out<0>|         7.350(R)|      SLOW  |         3.856(R)|      FAST  |clk_BUFGP         |   0.000|
+count_out<1>|         7.152(R)|      SLOW  |         3.758(R)|      FAST  |clk_BUFGP         |   0.000|
+count_out<2>|         7.222(R)|      SLOW  |         3.809(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.177|         |         |         |
+data_in<0>     |    1.687|    5.180|         |         |
+data_in<1>     |    2.448|    5.121|         |         |
+data_in<2>     |    2.829|    4.592|         |         |
+data_in<3>     |    1.334|    4.447|         |         |
+data_in<4>     |    2.623|    4.837|         |         |
+data_in<5>     |    2.015|    4.527|         |         |
+data_in<6>     |    2.194|    5.076|         |         |
+data_in<7>     |    1.728|    4.053|         |         |
+rst            |    2.916|    5.180|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |    0.394|    0.394|
+rst            |         |         |    1.185|    1.185|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<1>     |         |         |    0.065|    0.065|
+rst            |         |         |    0.488|    0.488|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<2>     |         |         |    0.393|    0.393|
+rst            |         |         |    0.480|    0.480|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<3>     |         |         |    0.628|    0.628|
+rst            |         |         |    0.974|    0.974|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<4>     |         |         |    0.358|    0.358|
+rst            |         |         |    0.558|    0.558|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<5>     |         |         |    0.402|    0.402|
+rst            |         |         |    0.718|    0.718|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<6>     |         |         |    0.651|    0.651|
+rst            |         |         |    0.763|    0.763|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock data_in<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<7>     |         |         |    0.351|    0.351|
+rst            |         |         |    0.802|    0.802|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+data_in<0>     |         |         |   -0.355|   -0.355|
+data_in<1>     |         |         |   -0.341|   -0.341|
+data_in<2>     |         |         |    0.309|    0.309|
+data_in<3>     |         |         |    0.298|    0.298|
+data_in<4>     |         |         |    0.174|    0.174|
+data_in<5>     |         |         |    0.104|    0.104|
+data_in<6>     |         |         |    0.547|    0.547|
+data_in<7>     |         |         |   -0.076|   -0.076|
+rst            |         |         |    0.659|    0.659|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Apr 23 00:51:51 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 378 MB
+
+
+

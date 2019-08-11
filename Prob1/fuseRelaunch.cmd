@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Prob1/prob1_tb_isim_beh.exe" -prj "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Prob1/prob1_tb_beh.prj" "work.prob1_tb" "work.glbl" 

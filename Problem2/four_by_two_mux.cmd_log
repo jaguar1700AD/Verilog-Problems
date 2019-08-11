@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/four_by_two_mux.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/four_by_two_mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 four_by_two_mux.ngc four_by_two_mux.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o four_by_two_mux_map.ncd four_by_two_mux.ngd four_by_two_mux.pcf 
+par -w -intstyle ise -ol high -mt off four_by_two_mux_map.ncd four_by_two_mux.ncd four_by_two_mux.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml four_by_two_mux.twx four_by_two_mux.ncd -o four_by_two_mux.twr four_by_two_mux.pcf 
+bitgen -intstyle ise -f four_by_two_mux.ut four_by_two_mux.ncd 
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/four_by_two_mux.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/four_by_two_mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 four_by_two_mux.ngc four_by_two_mux.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o four_by_two_mux_map.ncd four_by_two_mux.ngd four_by_two_mux.pcf 
+par -w -intstyle ise -ol high -mt off four_by_two_mux_map.ncd four_by_two_mux.ncd four_by_two_mux.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml four_by_two_mux.twx four_by_two_mux.ncd -o four_by_two_mux.twr four_by_two_mux.pcf 
+bitgen -intstyle ise -f four_by_two_mux.ut four_by_two_mux.ncd 
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/four_by_two_mux.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/four_by_two_mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 four_by_two_mux.ngc four_by_two_mux.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o four_by_two_mux_map.ncd four_by_two_mux.ngd four_by_two_mux.pcf 
+par -w -intstyle ise -ol high -mt off four_by_two_mux_map.ncd four_by_two_mux.ncd four_by_two_mux.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml four_by_two_mux.twx four_by_two_mux.ncd -o four_by_two_mux.twr four_by_two_mux.pcf 
+bitgen -intstyle ise -f four_by_two_mux.ut four_by_two_mux.ncd 

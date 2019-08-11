@@ -1,0 +1,4 @@
+verilog isim_temp "D_latch.v"
+verilog isim_temp "D_flip_flop.v"
+verilog isim_temp "D_flip_flop_tb.v"
+verilog isim_temp "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

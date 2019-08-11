@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Prob1/prob1_tb.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Prob1/prob1_tb.syr" 

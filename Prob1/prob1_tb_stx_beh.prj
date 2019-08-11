@@ -1,0 +1,3 @@
+verilog isim_temp "prob1.v"
+verilog isim_temp "prob1_tb.v"
+verilog isim_temp "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

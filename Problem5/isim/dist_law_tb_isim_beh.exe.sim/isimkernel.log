@@ -1,0 +1,28 @@
+Command line:
+   dist_law_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59825
+
+Tue Apr 23 14:40:55 2019
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 246.661 Meg
+
+ Total Signals          : 29
+ Total Nets             : 61
+ Total Signal Drivers   : 13
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 18
+ Total Traceable Variables  : 39
+ Total Scalar Nets and Variables : 315
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 322.163 Meg
+
+Tue Apr 23 14:41:09 2019
+

@@ -1,0 +1,472 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: div.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "div.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "div"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : div
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem4/div.v" into library work
+Parsing module <div>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <div>.
+WARNING:HDLCompiler:413 - "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem4/div.v" Line 37: Result of 8-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem4/div.v" Line 41: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <div>.
+    Related source file is "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem4/div.v".
+    Found 8-bit subtractor for signal <n0013> created at line 37.
+    Found 4-bit adder for signal <dividend[7]_divisor[3]_add_4_OUT> created at line 40.
+    Found 8-bit subtractor for signal <dividend[7]_GND_1_o_sub_6_OUT<7:0>> created at line 41.
+    Found 8x4-bit multiplier for signal <n0012> created at line 37.
+    Found 32-bit comparator greater for signal <GND_1_o_dividend[7]_LessThan_4_o> created at line 38
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <div> synthesized.
+
+Synthesizing Unit <div_8s_4s>.
+    Related source file is "".
+    Found 8-bit subtractor for signal <a[7]_unary_minus_1_OUT> created at line 0.
+    Found 4-bit subtractor for signal <b[3]_unary_minus_3_OUT> created at line 0.
+    Found 12-bit adder for signal <n0271> created at line 0.
+    Found 12-bit adder for signal <GND_2_o_b[3]_add_5_OUT> created at line 0.
+    Found 11-bit adder for signal <n0275> created at line 0.
+    Found 11-bit adder for signal <GND_2_o_b[3]_add_7_OUT> created at line 0.
+    Found 10-bit adder for signal <n0279> created at line 0.
+    Found 10-bit adder for signal <GND_2_o_b[3]_add_9_OUT> created at line 0.
+    Found 9-bit adder for signal <n0283> created at line 0.
+    Found 9-bit adder for signal <GND_2_o_b[3]_add_11_OUT> created at line 0.
+    Found 8-bit adder for signal <n0287> created at line 0.
+    Found 8-bit adder for signal <a[7]_b[3]_add_13_OUT> created at line 0.
+    Found 8-bit adder for signal <n0291> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_2_o_add_15_OUT[7:0]> created at line 0.
+    Found 8-bit adder for signal <n0295> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_2_o_add_17_OUT[7:0]> created at line 0.
+    Found 8-bit adder for signal <n0299> created at line 0.
+    Found 8-bit adder for signal <a[7]_GND_2_o_add_19_OUT[7:0]> created at line 0.
+    Found 9-bit adder for signal <GND_2_o_BUS_0001_add_22_OUT[8:0]> created at line 0.
+    Found 12-bit comparator greater for signal <BUS_0001_INV_112_o> created at line 0
+    Found 11-bit comparator greater for signal <BUS_0002_INV_111_o> created at line 0
+    Found 10-bit comparator greater for signal <BUS_0003_INV_110_o> created at line 0
+    Found 9-bit comparator greater for signal <BUS_0004_INV_109_o> created at line 0
+    Found 8-bit comparator greater for signal <BUS_0005_INV_108_o> created at line 0
+    Found 8-bit comparator greater for signal <BUS_0006_INV_107_o> created at line 0
+    Found 8-bit comparator greater for signal <BUS_0007_INV_106_o> created at line 0
+    Found 8-bit comparator greater for signal <BUS_0008_INV_105_o> created at line 0
+    Found 8-bit comparator greater for signal <BUS_0009_INV_104_o> created at line 0
+    Summary:
+	inferred  19 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  46 Multiplexer(s).
+Unit <div_8s_4s> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 22
+ 10-bit adder                                          : 2
+ 11-bit adder                                          : 2
+ 12-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder                                           : 8
+ 8-bit subtractor                                      : 3
+ 9-bit adder                                           : 3
+# Comparators                                          : 10
+ 10-bit comparator greater                             : 1
+ 11-bit comparator greater                             : 1
+ 12-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 5
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 40
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 5
+ 9-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <div>.
+	Multiplier <Mmult_n0012> in block <div> and adder/subtractor <Msub_n0013_Madd> in block <div> are combined into a MAC<Maddsub_n0012>.
+Unit <div> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 8x4-to-4-bit MAC                                      : 1
+# Adders/Subtractors                                   : 13
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 8-bit adder carry in                                  : 8
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 1
+# Comparators                                          : 10
+ 10-bit comparator greater                             : 1
+ 11-bit comparator greater                             : 1
+ 12-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 5
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 48
+ 1-bit 2-to-1 multiplexer                              : 40
+ 4-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 5
+ 9-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <div> ...
+
+Optimizing unit <div_8s_4s> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block div, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : div.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 89
+#      GND                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 7
+#      LUT4                        : 13
+#      LUT5                        : 22
+#      LUT6                        : 41
+#      MUXF7                       : 1
+#      VCC                         : 1
+# IO Buffers                       : 24
+#      IBUF                        : 12
+#      OBUF                        : 12
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   86  out of   2400     3%  
+    Number used as Logic:                86  out of   2400     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     86
+   Number with an unused Flip Flop:      86  out of     86   100%  
+   Number with an unused LUT:             0  out of     86     0%  
+   Number of fully used LUT-FF pairs:     0  out of     86     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    102    23%  
+
+Specific Feature Utilization:
+ Number of DSP48A1s:                      2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                       | Load  |
+-----------------------------------+---------------------------------------------+-------+
+N1                                 | NONE(Madd_dividend[7]_divisor[3]_add_4_OUT1)| 1     |
+-----------------------------------+---------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 35.088ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 39.942ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'N1'
+  Total number of paths / destination ports: 1204750660 / 52
+-------------------------------------------------------------------------
+Offset:              35.088ns (Levels of Logic = 25)
+  Source:            dividend<3> (PAD)
+  Destination:       Madd_dividend[7]_divisor[3]_add_4_OUT1 (DSP)
+  Destination Clock: N1 rising
+
+  Data Path: dividend<3> to Madd_dividend[7]_divisor[3]_add_4_OUT1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            49   1.222   1.781  dividend_3_IBUF (dividend_3_IBUF)
+     LUT5:I1->O            5   0.203   0.715  dividend[7]_divisor[3]_div_0/Msub_a[7]_unary_minus_1_OUT_cy<4>11 (dividend[7]_divisor[3]_div_0/Msub_a[7]_unary_minus_1_OUT_cy<4>)
+     LUT4:I3->O            1   0.205   0.580  dividend[7]_divisor[3]_div_0/Mmux_a[7]_a[7]_mux_1_OUT81 (dividend[7]_divisor[3]_div_0/a[7]_a[7]_mux_1_OUT<7>)
+     LUT5:I4->O            2   0.205   0.981  dividend[7]_divisor[3]_div_0/BUS_0002_INV_111_o1 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<7>)
+     LUT6:I0->O            3   0.203   0.879  dividend[7]_divisor[3]_div_0/Mmux_a[7]_GND_2_o_MUX_51_o11 (dividend[7]_divisor[3]_div_0/a[7]_GND_2_o_MUX_51_o)
+     LUT6:I3->O            3   0.205   0.995  dividend[7]_divisor[3]_div_0/Mmux_a[7]_GND_2_o_MUX_71_o111 (dividend[7]_divisor[3]_div_0/a[7]_GND_2_o_MUX_72_o)
+     LUT5:I0->O            2   0.203   0.864  dividend[7]_divisor[3]_div_0/BUS_0004_INV_109_o1_SW0 (N2)
+     LUT6:I2->O            7   0.203   1.138  dividend[7]_divisor[3]_div_0/BUS_0004_INV_109_o1 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<5>)
+     LUT6:I0->O            4   0.203   0.931  dividend[7]_divisor[3]_div_0/Mmux_a[7]_GND_2_o_MUX_89_o111 (dividend[7]_divisor[3]_div_0/a[7]_GND_2_o_MUX_90_o)
+     LUT5:I1->O            6   0.203   1.109  dividend[7]_divisor[3]_div_0/BUS_0005_INV_108_o1 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<4>)
+     LUT6:I0->O            3   0.203   0.995  dividend[7]_divisor[3]_div_0/Mmux_a[7]_a[7]_MUX_105_o121 (dividend[7]_divisor[3]_div_0/a[7]_a[7]_MUX_107_o)
+     LUT6:I1->O            3   0.203   0.879  dividend[7]_divisor[3]_div_0/BUS_0006_INV_107_o2 (dividend[7]_divisor[3]_div_0/BUS_0006_INV_107_o1)
+     LUT4:I1->O            8   0.205   1.167  dividend[7]_divisor[3]_div_0/BUS_0006_INV_107_o11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<3>)
+     LUT6:I0->O            3   0.203   0.995  dividend[7]_divisor[3]_div_0/Mmux_n029351 (dividend[7]_divisor[3]_div_0/n0293<4>)
+     LUT6:I1->O            3   0.203   0.755  dividend[7]_divisor[3]_div_0/BUS_0007_INV_106_o2 (dividend[7]_divisor[3]_div_0/BUS_0007_INV_106_o1)
+     LUT5:I3->O           12   0.203   1.273  dividend[7]_divisor[3]_div_0/BUS_0007_INV_106_o11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<2>)
+     LUT6:I0->O            3   0.203   0.995  dividend[7]_divisor[3]_div_0/Mmux_n029741 (dividend[7]_divisor[3]_div_0/n0297<3>)
+     LUT6:I1->O            3   0.203   0.755  dividend[7]_divisor[3]_div_0/BUS_0008_INV_105_o2 (dividend[7]_divisor[3]_div_0/BUS_0008_INV_105_o1)
+     LUT6:I4->O           13   0.203   1.297  dividend[7]_divisor[3]_div_0/BUS_0008_INV_105_o11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<1>)
+     LUT6:I0->O            1   0.203   0.924  dividend[7]_divisor[3]_div_0/Mmux_n026331 (dividend[7]_divisor[3]_div_0/n0263<2>)
+     LUT6:I1->O            3   0.203   0.651  dividend[7]_divisor[3]_div_0/BUS_0009_INV_104_o14 (dividend[7]_divisor[3]_div_0/BUS_0009_INV_104_o14)
+     LUT5:I4->O           10   0.205   0.857  dividend[7]_divisor[3]_div_0/BUS_0009_INV_104_o15 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_cy<0>)
+     LUT5:I4->O            4   0.205   0.912  dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_cy<4>11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_cy<4>)
+     LUT6:I3->O           12   0.205   0.908  dividend[7]_divisor[3]_div_0/Mmux_o81 (n0011<7>)
+     DSP48A1:B7->PCOUT47    1   4.400   0.000  Maddsub_n0012 (Maddsub_n0012_PCOUT_to_Madd_dividend[7]_divisor[3]_add_4_OUT1_PCIN_47)
+     DSP48A1:PCIN47            1.447          Madd_dividend[7]_divisor[3]_add_4_OUT1
+    ----------------------------------------
+    Total                     35.088ns (11.752ns logic, 23.336ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5224784388 / 12
+-------------------------------------------------------------------------
+Delay:               39.942ns (Levels of Logic = 28)
+  Source:            dividend<3> (PAD)
+  Destination:       remainder<3> (PAD)
+
+  Data Path: dividend<3> to remainder<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            49   1.222   1.781  dividend_3_IBUF (dividend_3_IBUF)
+     LUT5:I1->O            5   0.203   0.715  dividend[7]_divisor[3]_div_0/Msub_a[7]_unary_minus_1_OUT_cy<4>11 (dividend[7]_divisor[3]_div_0/Msub_a[7]_unary_minus_1_OUT_cy<4>)
+     LUT4:I3->O            1   0.205   0.580  dividend[7]_divisor[3]_div_0/Mmux_a[7]_a[7]_mux_1_OUT81 (dividend[7]_divisor[3]_div_0/a[7]_a[7]_mux_1_OUT<7>)
+     LUT5:I4->O            2   0.205   0.981  dividend[7]_divisor[3]_div_0/BUS_0002_INV_111_o1 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<7>)
+     LUT6:I0->O            3   0.203   0.879  dividend[7]_divisor[3]_div_0/Mmux_a[7]_GND_2_o_MUX_51_o11 (dividend[7]_divisor[3]_div_0/a[7]_GND_2_o_MUX_51_o)
+     LUT6:I3->O            3   0.205   0.995  dividend[7]_divisor[3]_div_0/Mmux_a[7]_GND_2_o_MUX_71_o111 (dividend[7]_divisor[3]_div_0/a[7]_GND_2_o_MUX_72_o)
+     LUT5:I0->O            2   0.203   0.864  dividend[7]_divisor[3]_div_0/BUS_0004_INV_109_o1_SW0 (N2)
+     LUT6:I2->O            7   0.203   1.138  dividend[7]_divisor[3]_div_0/BUS_0004_INV_109_o1 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<5>)
+     LUT6:I0->O            4   0.203   0.931  dividend[7]_divisor[3]_div_0/Mmux_a[7]_GND_2_o_MUX_89_o111 (dividend[7]_divisor[3]_div_0/a[7]_GND_2_o_MUX_90_o)
+     LUT5:I1->O            6   0.203   1.109  dividend[7]_divisor[3]_div_0/BUS_0005_INV_108_o1 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<4>)
+     LUT6:I0->O            3   0.203   0.995  dividend[7]_divisor[3]_div_0/Mmux_a[7]_a[7]_MUX_105_o121 (dividend[7]_divisor[3]_div_0/a[7]_a[7]_MUX_107_o)
+     LUT6:I1->O            3   0.203   0.879  dividend[7]_divisor[3]_div_0/BUS_0006_INV_107_o2 (dividend[7]_divisor[3]_div_0/BUS_0006_INV_107_o1)
+     LUT4:I1->O            8   0.205   1.167  dividend[7]_divisor[3]_div_0/BUS_0006_INV_107_o11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<3>)
+     LUT6:I0->O            3   0.203   0.995  dividend[7]_divisor[3]_div_0/Mmux_n029351 (dividend[7]_divisor[3]_div_0/n0293<4>)
+     LUT6:I1->O            3   0.203   0.755  dividend[7]_divisor[3]_div_0/BUS_0007_INV_106_o2 (dividend[7]_divisor[3]_div_0/BUS_0007_INV_106_o1)
+     LUT5:I3->O           12   0.203   1.273  dividend[7]_divisor[3]_div_0/BUS_0007_INV_106_o11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<2>)
+     LUT6:I0->O            3   0.203   0.995  dividend[7]_divisor[3]_div_0/Mmux_n029741 (dividend[7]_divisor[3]_div_0/n0297<3>)
+     LUT6:I1->O            3   0.203   0.755  dividend[7]_divisor[3]_div_0/BUS_0008_INV_105_o2 (dividend[7]_divisor[3]_div_0/BUS_0008_INV_105_o1)
+     LUT6:I4->O           13   0.203   1.297  dividend[7]_divisor[3]_div_0/BUS_0008_INV_105_o11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_lut<1>)
+     LUT6:I0->O            1   0.203   0.924  dividend[7]_divisor[3]_div_0/Mmux_n026331 (dividend[7]_divisor[3]_div_0/n0263<2>)
+     LUT6:I1->O            3   0.203   0.651  dividend[7]_divisor[3]_div_0/BUS_0009_INV_104_o14 (dividend[7]_divisor[3]_div_0/BUS_0009_INV_104_o14)
+     LUT5:I4->O           10   0.205   0.857  dividend[7]_divisor[3]_div_0/BUS_0009_INV_104_o15 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_cy<0>)
+     LUT5:I4->O            4   0.205   0.912  dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_cy<4>11 (dividend[7]_divisor[3]_div_0/Madd_GND_2_o_BUS_0001_add_22_OUT[8:0]_cy<4>)
+     LUT6:I3->O           12   0.205   0.908  dividend[7]_divisor[3]_div_0/Mmux_o81 (n0011<7>)
+     DSP48A1:B7->PCOUT47    1   4.400   0.000  Maddsub_n0012 (Maddsub_n0012_PCOUT_to_Madd_dividend[7]_divisor[3]_add_4_OUT1_PCIN_47)
+     DSP48A1:PCIN47->P3    1   2.264   0.684  Madd_dividend[7]_divisor[3]_add_4_OUT1 (dividend[7]_divisor[3]_add_4_OUT<3>)
+     LUT2:I0->O            1   0.203   0.579  Mmux_remainder41 (remainder_3_OBUF)
+     OBUF:I->O                 2.571          remainder_3_OBUF (remainder<3>)
+    ----------------------------------------
+    Total                     39.942ns (15.343ns logic, 24.599ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.86 secs
+ 
+--> 
+
+
+Total memory usage is 387412 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

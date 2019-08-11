@@ -1,0 +1,195 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce
+-intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml div.twx div.ncd -o div.twr div.pcf
+
+Design file:              div.ncd
+Physical constraint file: div.pcf
+Device,package,speed:     xc6slx4,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+dividend<0>    |quotient<0>    |   36.521|
+dividend<0>    |quotient<1>    |   36.833|
+dividend<0>    |quotient<2>    |   36.576|
+dividend<0>    |quotient<3>    |   36.711|
+dividend<0>    |quotient<4>    |   37.199|
+dividend<0>    |quotient<5>    |   37.779|
+dividend<0>    |quotient<6>    |   37.716|
+dividend<0>    |quotient<7>    |   37.534|
+dividend<0>    |remainder<0>   |   39.062|
+dividend<0>    |remainder<1>   |   39.400|
+dividend<0>    |remainder<2>   |   39.135|
+dividend<0>    |remainder<3>   |   39.320|
+dividend<1>    |quotient<0>    |   36.399|
+dividend<1>    |quotient<1>    |   36.711|
+dividend<1>    |quotient<2>    |   36.454|
+dividend<1>    |quotient<3>    |   36.589|
+dividend<1>    |quotient<4>    |   37.077|
+dividend<1>    |quotient<5>    |   37.657|
+dividend<1>    |quotient<6>    |   37.594|
+dividend<1>    |quotient<7>    |   37.412|
+dividend<1>    |remainder<0>   |   38.940|
+dividend<1>    |remainder<1>   |   39.278|
+dividend<1>    |remainder<2>   |   39.013|
+dividend<1>    |remainder<3>   |   39.198|
+dividend<2>    |quotient<0>    |   36.296|
+dividend<2>    |quotient<1>    |   36.608|
+dividend<2>    |quotient<2>    |   36.351|
+dividend<2>    |quotient<3>    |   36.486|
+dividend<2>    |quotient<4>    |   36.974|
+dividend<2>    |quotient<5>    |   37.554|
+dividend<2>    |quotient<6>    |   37.491|
+dividend<2>    |quotient<7>    |   37.309|
+dividend<2>    |remainder<0>   |   38.837|
+dividend<2>    |remainder<1>   |   39.175|
+dividend<2>    |remainder<2>   |   38.910|
+dividend<2>    |remainder<3>   |   39.095|
+dividend<3>    |quotient<0>    |   36.368|
+dividend<3>    |quotient<1>    |   36.680|
+dividend<3>    |quotient<2>    |   36.423|
+dividend<3>    |quotient<3>    |   36.558|
+dividend<3>    |quotient<4>    |   37.046|
+dividend<3>    |quotient<5>    |   37.626|
+dividend<3>    |quotient<6>    |   37.563|
+dividend<3>    |quotient<7>    |   37.381|
+dividend<3>    |remainder<0>   |   38.909|
+dividend<3>    |remainder<1>   |   39.247|
+dividend<3>    |remainder<2>   |   38.982|
+dividend<3>    |remainder<3>   |   39.167|
+dividend<4>    |quotient<0>    |   36.083|
+dividend<4>    |quotient<1>    |   36.395|
+dividend<4>    |quotient<2>    |   36.138|
+dividend<4>    |quotient<3>    |   36.273|
+dividend<4>    |quotient<4>    |   36.761|
+dividend<4>    |quotient<5>    |   37.341|
+dividend<4>    |quotient<6>    |   37.278|
+dividend<4>    |quotient<7>    |   37.096|
+dividend<4>    |remainder<0>   |   38.624|
+dividend<4>    |remainder<1>   |   38.962|
+dividend<4>    |remainder<2>   |   38.697|
+dividend<4>    |remainder<3>   |   38.882|
+dividend<5>    |quotient<0>    |   35.563|
+dividend<5>    |quotient<1>    |   35.875|
+dividend<5>    |quotient<2>    |   35.618|
+dividend<5>    |quotient<3>    |   35.753|
+dividend<5>    |quotient<4>    |   36.241|
+dividend<5>    |quotient<5>    |   36.821|
+dividend<5>    |quotient<6>    |   36.758|
+dividend<5>    |quotient<7>    |   36.576|
+dividend<5>    |remainder<0>   |   38.104|
+dividend<5>    |remainder<1>   |   38.442|
+dividend<5>    |remainder<2>   |   38.177|
+dividend<5>    |remainder<3>   |   38.362|
+dividend<6>    |quotient<0>    |   35.784|
+dividend<6>    |quotient<1>    |   36.096|
+dividend<6>    |quotient<2>    |   35.839|
+dividend<6>    |quotient<3>    |   35.974|
+dividend<6>    |quotient<4>    |   36.462|
+dividend<6>    |quotient<5>    |   37.042|
+dividend<6>    |quotient<6>    |   36.979|
+dividend<6>    |quotient<7>    |   36.797|
+dividend<6>    |remainder<0>   |   38.325|
+dividend<6>    |remainder<1>   |   38.663|
+dividend<6>    |remainder<2>   |   38.398|
+dividend<6>    |remainder<3>   |   38.583|
+dividend<7>    |quotient<0>    |   36.069|
+dividend<7>    |quotient<1>    |   36.381|
+dividend<7>    |quotient<2>    |   36.124|
+dividend<7>    |quotient<3>    |   36.259|
+dividend<7>    |quotient<4>    |   36.747|
+dividend<7>    |quotient<5>    |   37.327|
+dividend<7>    |quotient<6>    |   37.264|
+dividend<7>    |quotient<7>    |   37.082|
+dividend<7>    |remainder<0>   |   38.610|
+dividend<7>    |remainder<1>   |   38.948|
+dividend<7>    |remainder<2>   |   38.683|
+dividend<7>    |remainder<3>   |   38.868|
+divisor<0>     |quotient<0>    |   35.993|
+divisor<0>     |quotient<1>    |   36.305|
+divisor<0>     |quotient<2>    |   36.048|
+divisor<0>     |quotient<3>    |   36.183|
+divisor<0>     |quotient<4>    |   36.671|
+divisor<0>     |quotient<5>    |   37.251|
+divisor<0>     |quotient<6>    |   37.188|
+divisor<0>     |quotient<7>    |   37.006|
+divisor<0>     |remainder<0>   |   38.534|
+divisor<0>     |remainder<1>   |   38.872|
+divisor<0>     |remainder<2>   |   38.607|
+divisor<0>     |remainder<3>   |   38.792|
+divisor<1>     |quotient<0>    |   35.913|
+divisor<1>     |quotient<1>    |   36.225|
+divisor<1>     |quotient<2>    |   35.968|
+divisor<1>     |quotient<3>    |   36.103|
+divisor<1>     |quotient<4>    |   36.591|
+divisor<1>     |quotient<5>    |   37.171|
+divisor<1>     |quotient<6>    |   37.108|
+divisor<1>     |quotient<7>    |   36.926|
+divisor<1>     |remainder<0>   |   38.454|
+divisor<1>     |remainder<1>   |   38.792|
+divisor<1>     |remainder<2>   |   38.527|
+divisor<1>     |remainder<3>   |   38.712|
+divisor<2>     |quotient<0>    |   35.376|
+divisor<2>     |quotient<1>    |   35.688|
+divisor<2>     |quotient<2>    |   35.431|
+divisor<2>     |quotient<3>    |   35.566|
+divisor<2>     |quotient<4>    |   36.054|
+divisor<2>     |quotient<5>    |   36.634|
+divisor<2>     |quotient<6>    |   36.571|
+divisor<2>     |quotient<7>    |   36.389|
+divisor<2>     |remainder<0>   |   37.917|
+divisor<2>     |remainder<1>   |   38.255|
+divisor<2>     |remainder<2>   |   37.990|
+divisor<2>     |remainder<3>   |   38.175|
+divisor<3>     |quotient<0>    |   37.456|
+divisor<3>     |quotient<1>    |   37.768|
+divisor<3>     |quotient<2>    |   37.511|
+divisor<3>     |quotient<3>    |   37.646|
+divisor<3>     |quotient<4>    |   38.134|
+divisor<3>     |quotient<5>    |   38.714|
+divisor<3>     |quotient<6>    |   38.651|
+divisor<3>     |quotient<7>    |   38.469|
+divisor<3>     |remainder<0>   |   39.997|
+divisor<3>     |remainder<1>   |   40.335|
+divisor<3>     |remainder<2>   |   40.070|
+divisor<3>     |remainder<3>   |   40.255|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 23 16:58:47 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 379 MB
+
+
+

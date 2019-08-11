@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/sixteen_by_four_mux.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/sixteen_by_four_mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_by_four_mux.ngc sixteen_by_four_mux.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_by_four_mux_map.ncd sixteen_by_four_mux.ngd sixteen_by_four_mux.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_by_four_mux_map.ncd sixteen_by_four_mux.ncd sixteen_by_four_mux.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sixteen_by_four_mux.twx sixteen_by_four_mux.ncd -o sixteen_by_four_mux.twr sixteen_by_four_mux.pcf 
+bitgen -intstyle ise -f sixteen_by_four_mux.ut sixteen_by_four_mux.ncd 
+xst -intstyle ise -ifn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/sixteen_by_four_mux.xst" -ofn "/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem2/sixteen_by_four_mux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 sixteen_by_four_mux.ngc sixteen_by_four_mux.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sixteen_by_four_mux_map.ncd sixteen_by_four_mux.ngd sixteen_by_four_mux.pcf 
+par -w -intstyle ise -ol high -mt off sixteen_by_four_mux_map.ncd sixteen_by_four_mux.ncd sixteen_by_four_mux.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sixteen_by_four_mux.twx sixteen_by_four_mux.ncd -o sixteen_by_four_mux.twr sixteen_by_four_mux.pcf 
+bitgen -intstyle ise -f sixteen_by_four_mux.ut sixteen_by_four_mux.ncd 

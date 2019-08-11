@@ -1,0 +1,28 @@
+Command line:
+   D_flip_flop_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54591
+
+Tue Apr 23 05:17:51 2019
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 246.661 Meg
+
+ Total Signals          : 39
+ Total Nets             : 29
+ Total Signal Drivers   : 21
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 24
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 112
+
+ Total Simulation Time: 0.06 sec
+
+ Current Memory Usage: 322.163 Meg
+
+Tue Apr 23 05:19:35 2019
+

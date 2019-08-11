@@ -1,0 +1,29 @@
+Command line:
+   sixteen_by_four_mux_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60517
+
+Tue Apr 23 16:42:01 2019
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 246.661 Meg
+
+ Total Signals          : 28
+ Total Nets             : 38
+ Total Signal Drivers   : 12
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 19
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 175
+Total Line Count : 54
+
+ Total Simulation Time: 0.09 sec
+
+ Current Memory Usage: 322.163 Meg
+
+Tue Apr 23 16:43:13 2019
+

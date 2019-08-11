@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem3b/mealy.ncd
+OUTFILE=/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem3b/mealy.bit
+FAMILY=Spartan6
+PART=xc6slx4-3tqg144
+WORKINGDIR=/media/shashank/C628A2F428A2E323/Xilinx/Xilinx/Problem3b
+LICENSE=WebPack
+USER_INFO=211727713_0_0_649
